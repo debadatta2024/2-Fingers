@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fingering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>2 FINGERS</h1>
+        <div id="ui">
+            <span id="scoreLabel">Score: 0</span>
+        </div>
+
+        <div id="aboutOverlay">
+            <h2>HOW TO PLAY</h2>
+            <div class="instructions">
+                <p><b>Controls:</b></p>
+                <p>Press <b>A</b> or <b>Tap Left</b> for Left Car</p>
+                <p>Press <b>D</b> or <b>Tap Right</b> for Right Car</p>
+                <hr style="border-color: #7f8c8d; margin: 15px 0;">
+                <p><b>Goal:</b></p>
+                <p>Collect <span style="color: #2ecc71">Good Faces</span></p>
+                <p>Avoid <span style="color: #e74c3c">Bad Faces</span></p>
+            </div>
+            <button id="continueBtn">CONTINUE</button>
+        </div>
+
+        <div id="nameOverlay" style="display: none;">
+            <h2>ENTER NAME</h2>
+            <input type="text" id="playerNameInput" placeholder="Your Name" maxlength="10">
+            <button id="submitNameBtn">NEXT</button>
+        </div>
+
+        <div id="menuOverlay" style="display: none;">
+            <h2 id="menuTitle">2 FINGERS</h2>
+            <p id="menuScore">Press Start to Play</p>
+            <div id="leaderboardSection">
+                <h3>TOP SCORES</h3>
+                <ul id="leaderboardList">
+                    <li>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                </ul>
+            </div>
+            <button id="startBtn">START GAME</button>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div class="controls-hint">
+            <p>Left Car: <b>A</b> | Right Car: <b>D</b></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
